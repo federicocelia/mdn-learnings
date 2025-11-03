@@ -1,0 +1,89 @@
+# 🐛 Creepy-Crawlies Splash Page Assessment
+
+## 📁 Media Assets
+
+You will need to include the following media files in your page:
+
+| File Name            | Description                                               |
+|----------------------|-----------------------------------------------------------|
+| `bee.jpg`            | Image for the **Bees, Wasps, Ants (Hymenoptera)** section |
+| `beetle.png`         | Image for the **Beetles (Coleoptera)** section            |
+| `butterfly.jpg`      | Image for the **Butterflies & Moths (Lepidoptera)** section |
+| `mosquito.jpg`       | Image for the **Flies & Mosquitoes (Diptera)** section    |
+| `spider.jpg`         | Image for the **Spiders (Araneae)** section               |
+| `true_bug.jpg`       | Image for the **True Bugs (Hemiptera)** section           |
+| `bug_video_640.mp4`  | Header video                                               |
+
+---
+
+## 📝 Project Brief
+
+You're provided with a mostly-finished splash page about different creepy-crawlies. Your task is to enhance it by adding media elements. The following sections outline what you need to do.
+
+---
+
+## 🎬 Adding a Video to the Header
+
+Just below the `<h1>`, add a `<video>` element to embed the header video. It should:
+
+- Specify the media type (`type="video/mp4"`).
+- Autoplay on page load.
+- Be muted to allow autoplay in most browsers.
+- Loop continuously.
+- Preload the video content.
+- Hide video controls.
+
+**Example:**
+
+```html
+<video autoplay muted loop preload="auto">
+  <source src="bug_video_640.mp4" type="video/mp4">
+</video>
+
+# 🖼️ Adding Section Images
+
+For each bug section, add an image below the corresponding `<h2>`:
+
+- Use the appropriate image file.
+- Set `alt` text for accessibility.
+- Constrain image dimensions to **250 x 180** pixels.
+- Include a caption using a semantic container like `<figure>` and `<figcaption>`.
+
+**Example:**
+```html
+<figure>
+  <img src="bee.jpg" alt="Bee pollinating a flower" width="250" height="180">
+  <figcaption>Bees are essential pollinators in many ecosystems.</figcaption>
+</figure>
+
+# 🐞 Adding Bug Emojis or Icons
+
+To add a playful touch:
+
+Insert a relevant emoji at the start of each <nav> list item.
+
+Use the same emoji at the start of each corresponding <h2>.
+
+**Example:**
+
+```html
+<nav>
+  <ul>
+    <li>🐝 Bees, Wasps, Ants</li>
+    <li>🪲 Beetles</li>
+    <li>🦋 Butterflies & Moths</li>
+    <!-- etc. -->
+  </ul>
+</nav>
+
+<h2>🐝 Bees, Wasps, Ants</h2>
+
+#💡 Hints and Tips
+
+. Use the W3C HTML Validator to check your markup.
+
+. No CSS knowledge is required — the styling is already handled.
+
+. Focus on editing the provided HTML file to meet the media and semantic requirements.
+
+
