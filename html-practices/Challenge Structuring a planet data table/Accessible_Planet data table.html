@@ -9,115 +9,140 @@
   <body>
     <h1>Accessible - Planet data table</h1>
     <table>
-  <caption>
-    Data about the planets of our solar system (Planetary facts taken from
-    <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">
-      Nasa's Planetary Fact Sheet - Metric</a>).
-  </caption>
-  <thead>
-    <tr>
-      <th colspan="2" scope="col" class="empty"></th>
-      <th id="name" scope="col">Name</th>
-      <th id="mass" scope="col">Mass (10<sup>24</sup>)kg</th>
-      <th id="diameter" scope="col">Diameter (km)</th>
-      <th id="density" scope="col">Density (kg/m<sup>3</sup>)</th>
-      <th id="gravity" scope="col">Gravity (m/s<sup>2</sup>)</th>
-      <th id="day_length" scope="col">Length of day (hours)</th>
-      <th id="distance_sun" scope="col">Distance from Sun (10<sup>6</sup>km)</th>
-      <th id="temperature" scope="col">Mean temperature (°C)</th>
-      <th id="number_moons" scope="col">Number of moons</th>
-      <th id="notes" scope="col">Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="4" colspan="2" scope="rowgroup" id="terrestrial_planets">Terrestrial planets</th>
-      <th id="mercury" scope="row">Mercury</th>
-      <td headers="terrestrial_planets mercury mass">0.330</td>
-      <td headers="terrestrial_planets mercury diameter">4,879</td>
-      <td headers="terrestrial_planets mercury density">5427</td>
-      <td headers="terrestrial_planets mercury gravity">3.7</td>
-      <td headers="terrestrial_planets mercury day_length">4222.6</td>
-      <td headers="terrestrial_planets mercury distance_sun">57.9</td>
-      <td headers="terrestrial_planets mercury temperature">167</td>
-      <td headers="terrestrial_planets mercury number_moons">0</td>
-      <td headers="terrestrial_planets mercury notes">Closest to the Sun</td>
-    </tr>
-    <tr>
-      <th id="venus" scope="row">Venus</th>
-      <td headers="terrestrial_planets venus mass">4.87</td>
-      <td headers="terrestrial_planets venus diameter">12,104</td>
-      <td headers="terrestrial_planets venus density">5243</td>
-      <td headers="terrestrial_planets venus gravity">8.9</td>
-      <td headers="terrestrial_planets venus day_length">2802.0</td>
-      <td headers="terrestrial_planets venus distance_sun">108.2</td>
-      <td headers="terrestrial_planets venus temperature">464</td>
-      <td headers="terrestrial_planets venus number_moons">0</td>
-      <td headers="terrestrial_planets venus notes">Hottest planet</td>
-    </tr>
-    <tr>
-      <th id="earth" scope="row">Earth</th>
-      <td headers="terrestrial_planets earth mass">5.97</td>
-      <td headers="terrestrial_planets earth diameter">12,756</td>
-      <td headers="terrestrial_planets earth density">5514</td>
-      <td headers="terrestrial_planets earth gravity">9.8</td>
-      <td headers="terrestrial_planets earth day_length">24.0</td>
-      <td headers="terrestrial_planets earth distance_sun">149.6</td>
-      <td headers="terrestrial_planets earth temperature">15</td>
-      <td headers="terrestrial_planets earth number_moons">1</td>
-      <td headers="terrestrial_planets earth notes">Our home planet</td>
-    </tr>
-    <tr>
-      <th id="mars" scope="row">Mars</th>
-      <td headers="terrestrial_planets mars mass">0.642</td>
-      <td headers="terrestrial_planets mars diameter">6,792</td>
-      <td headers="terrestrial_planets mars density">3933</td>
-      <td headers="terrestrial_planets mars gravity">3.7</td>
-      <td headers="terrestrial_planets mars day_length">24.7</td>
-      <td headers="terrestrial_planets mars distance_sun">227.9</td>
-      <td headers="terrestrial_planets mars temperature">-65</td>
-      <td headers="terrestrial_planets mars number_moons">2</td>
-      <td headers="terrestrial_planets mars notes">Known as the Red Planet</td>
-    </tr>
-    <tr>
-      <th rowspan="4" colspan="1" scope="rowgroup" id="jovian_planets">Jovian planets</th>
-      <th rowspan="2" id="gas_giants" id="gas_giants" scope="rowgroup" header="jovian_planets">Gas giants</th>
-      <th id="jupiter" scope="row">Jupiter</th>
-      <td headers="jovian_planets gas_giants jupiter mass">1899</td>
-      <td headers="jovian_planets gas_giants jupiter diameter">142,984</td>
-      <td headers="jovian_planets gas_giants jupiter density">1326</td>
-      <td headers="jovian_planets gas_giants jupiter gravity">23.1</td>
-      <td headers="jovian_planets gas_giants jupiter day_length">9.9</td>
-      <td headers="jovian_planets gas_giants jupiter distance_sun">778.6</td>
-      <td headers="jovian_planets gas_giants jupiter temperature">-110</td>
-      <td headers="jovian_planets gas_giants jupiter number_moons">92</td>
-      <td headers="jovian_planets gas_giants jupiter notes">Largest planet</td>
-    </tr>
-    <tr>
-      <th id="saturn" scope="row">Saturn</th>
-      <td headers="jovian_planets gas_giants saturn mass">568</td>
-      <td headers="jovian_planets gas_giants saturn diameter">120,536</td>
-      <td headers="jovian_planets gas_giants saturn density">687</td>
-      <td headers="jovian_planets gas_giants saturn gravity">9.0</td>
-      <td headers="jovian_planets gas_giants saturn day_length">10.7</td>
-      <td headers="jovian_planets gas_giants saturn distance_sun">1433.5</td>
-      <td headers="jovian_planets gas_giants saturn temperature">-140</td>
-      <td headers="jovian_planets gas_giants saturn number_moons">83</td>
-      <td headers="jovian_planets gas_giants saturn notes">Has prominent rings</td>
-    </tr>
-    <tr>
-      <th rowspan="2" colspan="1" scope="rowgroup" id="ice_giants" header="jovian_planets">Ice giants</th>
-      <th id="uranus" scope="row">Uranus</th>
-      <td headers="jovian_planets ice_giants uranus mass">86.8</td>
-      <td headers="jovian_planets ice_giants uranus diameter">51,118</td>
-      <td headers="jovian_planets ice_giants uranus density">1270</td>
-      <td headers="jovian_planets ice_giants uranus gravity">8.7</td>
-      <td headers="jovian_planets ice_giants uranus day_length">17.2</td>
-      <td headers="jovian_planets ice_giants uranus distance_sun">2872.5</td>
-      <td headers="jovian_planets ice_giants uranus temperature">-195</td>
-      <td headers="jovian_planets ice_giants uranus number_moons">27</td>
-      <td headers="jovian_planets ice_giants uranus notes">Rotates on its side</td>
-    </tr>
+      <caption>
+        Data about the planets of our solar system (Planetary facts taken from
+        <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">
+          Nasa's Planetary Fact Sheet - Metric</a
+        >).
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2" scope="col" class="empty"></th>
+          <th id="name" scope="col">Name</th>
+          <th id="mass" scope="col">Mass (10<sup>24</sup>)kg</th>
+          <th id="diameter" scope="col">Diameter (km)</th>
+          <th id="density" scope="col">Density (kg/m<sup>3</sup>)</th>
+          <th id="gravity" scope="col">Gravity (m/s<sup>2</sup>)</th>
+          <th id="day_length" scope="col">Length of day (hours)</th>
+          <th id="distance_sun" scope="col">
+            Distance from Sun (10<sup>6</sup>km)
+          </th>
+          <th id="temperature" scope="col">Mean temperature (°C)</th>
+          <th id="number_moons" scope="col">Number of moons</th>
+          <th id="notes" scope="col">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="4" colspan="2" scope="rowgroup" id="terrestrial_planets">
+            Terrestrial planets
+          </th>
+          <th id="mercury" scope="row">Mercury</th>
+          <td headers="terrestrial_planets mercury mass">0.330</td>
+          <td headers="terrestrial_planets mercury diameter">4,879</td>
+          <td headers="terrestrial_planets mercury density">5427</td>
+          <td headers="terrestrial_planets mercury gravity">3.7</td>
+          <td headers="terrestrial_planets mercury day_length">4222.6</td>
+          <td headers="terrestrial_planets mercury distance_sun">57.9</td>
+          <td headers="terrestrial_planets mercury temperature">167</td>
+          <td headers="terrestrial_planets mercury number_moons">0</td>
+          <td headers="terrestrial_planets mercury notes">
+            Closest to the Sun
+          </td>
+        </tr>
+        <tr>
+          <th id="venus" scope="row">Venus</th>
+          <td headers="terrestrial_planets venus mass">4.87</td>
+          <td headers="terrestrial_planets venus diameter">12,104</td>
+          <td headers="terrestrial_planets venus density">5243</td>
+          <td headers="terrestrial_planets venus gravity">8.9</td>
+          <td headers="terrestrial_planets venus day_length">2802.0</td>
+          <td headers="terrestrial_planets venus distance_sun">108.2</td>
+          <td headers="terrestrial_planets venus temperature">464</td>
+          <td headers="terrestrial_planets venus number_moons">0</td>
+          <td headers="terrestrial_planets venus notes">Hottest planet</td>
+        </tr>
+        <tr>
+          <th id="earth" scope="row">Earth</th>
+          <td headers="terrestrial_planets earth mass">5.97</td>
+          <td headers="terrestrial_planets earth diameter">12,756</td>
+          <td headers="terrestrial_planets earth density">5514</td>
+          <td headers="terrestrial_planets earth gravity">9.8</td>
+          <td headers="terrestrial_planets earth day_length">24.0</td>
+          <td headers="terrestrial_planets earth distance_sun">149.6</td>
+          <td headers="terrestrial_planets earth temperature">15</td>
+          <td headers="terrestrial_planets earth number_moons">1</td>
+          <td headers="terrestrial_planets earth notes">Our home planet</td>
+        </tr>
+        <tr>
+          <th id="mars" scope="row">Mars</th>
+          <td headers="terrestrial_planets mars mass">0.642</td>
+          <td headers="terrestrial_planets mars diameter">6,792</td>
+          <td headers="terrestrial_planets mars density">3933</td>
+          <td headers="terrestrial_planets mars gravity">3.7</td>
+          <td headers="terrestrial_planets mars day_length">24.7</td>
+          <td headers="terrestrial_planets mars distance_sun">227.9</td>
+          <td headers="terrestrial_planets mars temperature">-65</td>
+          <td headers="terrestrial_planets mars number_moons">2</td>
+          <td headers="terrestrial_planets mars notes">
+            Known as the Red Planet
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="4" colspan="1" scope="rowgroup" id="jovian_planets">
+            Jovian planets
+          </th>
+          <th rowspan="2" id="gas_giants" scope="rowgroup">Gas giants</th>
+          <th id="jupiter" scope="row">Jupiter</th>
+          <td headers="jovian_planets gas_giants jupiter mass">1899</td>
+          <td headers="jovian_planets gas_giants jupiter diameter">142,984</td>
+          <td headers="jovian_planets gas_giants jupiter density">1326</td>
+          <td headers="jovian_planets gas_giants jupiter gravity">23.1</td>
+          <td headers="jovian_planets gas_giants jupiter day_length">9.9</td>
+          <td headers="jovian_planets gas_giants jupiter distance_sun">
+            778.6
+          </td>
+          <td headers="jovian_planets gas_giants jupiter temperature">-110</td>
+          <td headers="jovian_planets gas_giants jupiter number_moons">92</td>
+          <td headers="jovian_planets gas_giants jupiter notes">
+            Largest planet
+          </td>
+        </tr>
+        <tr>
+          <th id="saturn" scope="row">Saturn</th>
+          <td headers="jovian_planets gas_giants saturn mass">568</td>
+          <td headers="jovian_planets gas_giants saturn diameter">120,536</td>
+          <td headers="jovian_planets gas_giants saturn density">687</td>
+          <td headers="jovian_planets gas_giants saturn gravity">9.0</td>
+          <td headers="jovian_planets gas_giants saturn day_length">10.7</td>
+          <td headers="jovian_planets gas_giants saturn distance_sun">
+            1433.5
+          </td>
+          <td headers="jovian_planets gas_giants saturn temperature">-140</td>
+          <td headers="jovian_planets gas_giants saturn number_moons">83</td>
+          <td headers="jovian_planets gas_giants saturn notes">
+            Has prominent rings
+          </td>
+        </tr>
+        <tr>
+          <th rowspan="2" colspan="1" scope="rowgroup" id="ice_giants">
+            Ice giants
+          </th>
+          <th id="uranus" scope="row">Uranus</th>
+          <td headers="jovian_planets ice_giants uranus mass">86.8</td>
+          <td headers="jovian_planets ice_giants uranus diameter">51,118</td>
+          <td headers="jovian_planets ice_giants uranus density">1270</td>
+          <td headers="jovian_planets ice_giants uranus gravity">8.7</td>
+          <td headers="jovian_planets ice_giants uranus day_length">17.2</td>
+          <td headers="jovian_planets ice_giants uranus distance_sun">
+            2872.5
+          </td>
+          <td headers="jovian_planets ice_giants uranus temperature">-195</td>
+          <td headers="jovian_planets ice_giants uranus number_moons">27</td>
+          <td headers="jovian_planets ice_giants uranus notes">
+            Rotates on its side
+          </td>
+        </tr>
         <tr>
           <th id="neptune" scope="row">Neptune</th>
           <td headers="jovian_planets ice_giants neptune mass">102</td>
@@ -125,10 +150,14 @@
           <td headers="jovian_planets ice_giants neptune density">1638</td>
           <td headers="jovian_planets ice_giants neptune gravity">11.0</td>
           <td headers="jovian_planets ice_giants neptune day_length">16.1</td>
-          <td headers="jovian_planets ice_giants neptune distance_sun">4495.1</td>
+          <td headers="jovian_planets ice_giants neptune distance_sun">
+            4495.1
+          </td>
           <td headers="jovian_planets ice_giants neptune temperature">-200</td>
           <td headers="jovian_planets ice_giants neptune number_moons">14</td>
-          <td headers="jovian_planets ice_giants neptune notes">Farthest known planet</td>
+          <td headers="jovian_planets ice_giants neptune notes">
+            Farthest known planet
+          </td>
         </tr>
         <tr>
           <th rowspan="1" colspan="2" scope="rowgroup" id="dwarf_planets">
@@ -145,7 +174,8 @@
           <td headers="dwarf_planets pluto number_moons">5</td>
           <td headers="dwarf_planets pluto notes">Dwarf planet</td>
         </tr>
-    </tbody>
+      </tbody>
+    </table>
   </body>
 </html>
 
